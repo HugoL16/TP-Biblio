@@ -15,8 +15,9 @@
     </div>
     <div class="form-group my-4">
         <label for="image">Image : </label>
-        <input type="file" class="form-control" id="Image" name="image">
+        <input type="file" class="form-control" id="image" name="image">
     </div>
+    <img src="" id = "image-preview" alt="">
     <button class="btn btn-secondary">Créer livre</button>
 </form>
 

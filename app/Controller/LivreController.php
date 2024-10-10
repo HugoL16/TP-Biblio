@@ -46,9 +46,9 @@ class LivreController {
     }
 
     public function ajouterImage($image, $repertoire) {
-        if (!isset($_FILES['image']) || empty($_FILES['image']))
+        if ($image['size'] === 0){
             throw new Exception('Vous devez uploader une image');
-
+        }
         if (!file_exists($repertoire)) mkdir($repertoire, 0777);
 
         $filename = uniqid() . "-" . $image['name'];

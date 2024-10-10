@@ -16,7 +16,7 @@
     <img id="image-preview" src="<?= SITE_URL ?>images/<?= $livre->getUrlImage(); ?>" alt="<?= $livre->getTextAlternatif(); ?>">
     <div class="form-group my-4">
         <label for="image">Image : </label>
-        <input type="file" class="form-control-file" id="image" name="image">
+        <input type="file"  class="form-control-file" id="image" name="image">
     </div>
     <input type="hidden" name="id_livre" value="<?= $livre->getId(); ?>">
     <button class="btn btn-info">Modifier livre</button>
